@@ -1,0 +1,20 @@
+name: 'code-recycle'
+description: '@code-recycle/cli 封装'
+author: 'wszgrcy'
+# branding:
+#   icon: 'archive'
+#   color: 'blue'
+inputs:
+  path:
+    description: '脚本路径/script path'
+    required: true
+  dryRun:
+    description: '演练模式/dryRun'
+    required: false
+    default: false
+runs:
+  using: 'docker'
+  image: 'dockerfile'
+  args:
+    - ${{ inputs.path }}
+    - ${{ inputs.dryRun }}
