@@ -3,6 +3,9 @@ echo $(type sh)
 echo $(type bash)
 ls -lh
 npm i @code-recycle/cli -g
+echo $(type npm)
+echo $(type node)
+echo $(type code-recycle)
 code-recycle version
 PATH=$1
 CWD=$([ -n "$1" ] && echo -n "--cwd $1" || echo -n "")
