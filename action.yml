@@ -8,6 +8,9 @@ inputs:
   path:
     description: '脚本路径/script path'
     required: true
+  cwd:
+    description: '当前工作路径'
+    required: false
   dryRun:
     description: '演练模式/dryRun'
     required: false
@@ -17,4 +20,5 @@ runs:
   image: 'dockerfile'
   args:
     - ${{ inputs.path }}
+    - ${{ inputs.cwd }}
     - ${{ inputs.dryRun }}
