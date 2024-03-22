@@ -1,8 +1,7 @@
 #!/bin/bash
 ls -lh
 npm i @code-recycle/cli -g
-export LANG="en"
-code-recycle --help
+export LANG=$4
 code-recycle version
 
 I_PATH=$1
