@@ -16,5 +16,6 @@ echo $DRY_RUN
 COMMAND="code-recycle ${PATH} ${CWD} ${DRY_RUN}"
 echo $COMMAND
 ${'code-recycle version'}
+${'code-recycle --help'}
 code-recycle ${PATH} ${CWD} ${DRY_RUN}
 ${COMMAND}
