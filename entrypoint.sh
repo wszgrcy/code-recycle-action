@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 echo $(type sh)
 echo $(type bash)
 ls -lh
@@ -13,4 +13,4 @@ DRY_RUN=$([ "$3" == "true" ] && echo -n "--dryRun" || echo -n "")
 echo $PATH
 echo $CWD
 echo $DRY_RUN
-code-recycle $PATH $CWD $DRY_RUN
+echo "code-recycle $PATH $CWD $DRY_RUN" | sh
