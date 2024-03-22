@@ -3,6 +3,8 @@ echo $(type sh)
 echo $(type bash)
 ls -lh
 npm i @code-recycle/cli -g
+type git
+echo $(type git)
 echo $(type npm)
 echo $(type node)
 echo $(type code-recycle)
