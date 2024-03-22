@@ -13,6 +13,8 @@ DRY_RUN=$([ "$3" == "true" ] && echo -n "--dryRun" || echo -n "")
 echo $PATH
 echo $CWD
 echo $DRY_RUN
-COMMAND="code-recycle $PATH $CWD $DRY_RUN"
+COMMAND="code-recycle ${PATH} ${CWD} ${DRY_RUN}"
 echo $COMMAND
+${'code-recycle version'}
+code-recycle ${PATH} ${CWD} ${DRY_RUN}
 ${COMMAND}
