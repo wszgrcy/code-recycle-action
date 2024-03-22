@@ -15,6 +15,10 @@ inputs:
     description: '演练模式/dryRun'
     required: false
     default: false
+  lang:
+    description: '语言/language'
+    required: false
+    default: zh-Hans
 runs:
   using: 'docker'
   image: 'dockerfile'
@@ -22,3 +26,4 @@ runs:
     - ${{ inputs.path }}
     - ${{ inputs.cwd }}
     - ${{ inputs.dryRun }}
+    - ${{ inputs.lang }}
