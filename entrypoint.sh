@@ -1,4 +1,6 @@
-#!/bin/bash
+#!/bin/sh
+echo $(type sh)
+echo $(type bash)
 ls -lh
 npm i @code-recycle/cli -g
 code-recycle version
