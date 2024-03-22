@@ -1,6 +1,6 @@
 #!/bin/bash
 ls -lh
-npm i @code-recycle -g
+npm i @code-recycle/cli -g
 code-recycle version
 PATH=$1
 CWD=$([ -n "$1" ] && echo -n "--cwd $1" || echo -n "")
