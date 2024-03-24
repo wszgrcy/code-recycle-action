@@ -9,10 +9,14 @@ inputs:
     description: '脚本路径/script path'
     required: true
   cwd:
-    description: '当前工作路径'
+    required: false
+  root:
+    required: false
+  config:
+    required: false
+  debug:
     required: false
   dryRun:
-    description: '演练模式/dryRun'
     required: false
     default: false
   lang:
@@ -27,3 +31,6 @@ runs:
     - ${{ inputs.cwd }}
     - ${{ inputs.dryRun }}
     - ${{ inputs.lang }}
+    - ${{ inputs.root }}
+    - ${{ inputs.config }}
+    - ${{ inputs.debug }}
